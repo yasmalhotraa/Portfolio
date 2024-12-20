@@ -107,8 +107,7 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-  width: 9%;
-  color: white;
+  width: 7%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -148,6 +147,7 @@ span.navbar-text {
   height: 42px;
   position: absolute;
   background-color: #ffffff;
+  color: white;
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -204,11 +204,11 @@ nav.navbar .navbar-toggler:focus {
   box-shadow: none;
 }
 nav.navbar .navbar-toggler-icon {
-  width: 24px;
-  height: 17px;
+  width: 30px;
+  height: 19px;
   background-image: none;
   position: relative;
-  border-bottom: 2px solid #fff;
+  border-bottom: 3px solid #fff;
   transition: all 300ms linear;
   top: -2px;
 }
@@ -217,9 +217,9 @@ nav.navbar .navbar-toggler-icon:focus {
 }
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
-  width: 24px;
+  width: 30px;
   position: absolute;
-  height: 2px;
+  height: 3px;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -242,6 +242,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
+}
+@media (max-width: 550px) {
+  nav.navbar a.navbar-brand {
+    width: 15%;
+  }
 }
 
 /************ Banner Css ************/
@@ -315,19 +320,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 33px;
   }
   .banner {
-    padding: 220px 0 100px 0;
+    padding: 225px 0 100px 0;
   }
   .background-image-banner-left {
     display: block;
     position: absolute;
-    top: -6%; /* Adjust to keep it visible */
+    top: -3%; /* Adjust to keep it visible */
     left: 0px; /* Add a left offset to keep it within bounds */
     width: 90%; /* Small width, but still visible */
   }
   .background-image-banner-right {
     display: block;
     position: absolute;
-    bottom: 60%; /* Adjust to keep it visible */
+    top: 17%; /* Adjust to keep it visible */
     right: 0px; /* Add a left offset to keep it within bounds */
     width: 100%; /* Small width, but still visible */
   }
@@ -483,6 +488,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 2px solid #333333;
   overflow: hidden;
 }
+@media (max-width: 550px) {
+  .project .nav.nav-pills {
+    width: 100%;
+  }
+}
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
@@ -555,6 +565,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
   opacity: 0;
+  padding: 10px;
   width: 100%;
 }
 .proj-imgbx:hover .proj-txtx {
@@ -667,7 +678,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .footer img {
-  width: 26%;
+  width: 16%;
 }
 .footer p {
   font-weight: 400;

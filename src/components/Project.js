@@ -9,13 +9,15 @@ export const Projects = () => {
   const projects = [
     {
       title: "AI Trip Planner",
-      Description: "Generative AI ",
+      Description:
+        " A web app that uses AI to generate personalized travel itineraries based on user preferences, built with React, Firebase, and Google Cloud.",
       imgUrl: projImg1,
       link: "https://ai-trip-planner-yash-malhotra.vercel.app/",
     },
     {
       title: "Tetris Game",
-      Description: "Game",
+      Description:
+        "A classic Tetris game built with JavaScript, featuring dynamic controls and smooth gameplay. It challenges users to clear lines by arranging falling blocks, with an increasing level of difficulty.",
       imgUrl: projImg2,
       link: "https://tetrisgame-yashmalhotra.vercel.app/",
     },
@@ -60,8 +62,8 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Loren Ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">Loren Ipsum</Tab.Pane>
+                <Tab.Pane eventKey="second">Project Tab 2</Tab.Pane>
+                <Tab.Pane eventKey="third">Project Tab 3</Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

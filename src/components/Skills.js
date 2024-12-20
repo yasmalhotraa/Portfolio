@@ -94,6 +94,20 @@ export const Skills = () => {
                   </div>
                 </div>
                 <div className="skill-container">
+                  <h5>Version Control</h5>
+                  <div className="skill-points">
+                    <p>
+                      <ArrowRightCircle className="arrow-right" /> Git
+                    </p>
+                    <p>
+                      <ArrowRightCircle className="arrow-right" /> Github
+                    </p>
+                    <p>
+                      <ArrowRightCircle className="arrow-right" /> GitLab
+                    </p>
+                  </div>
+                </div>
+                <div className="skill-container">
                   <h5>Visualization Tools</h5>
                   <div className="skill-points">
                     <p>
