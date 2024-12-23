@@ -26,6 +26,9 @@ contactEmail.verify((error) => {
     console.log("Ready to Send");
   }
 });
+router.get('/', function(req, res){
+  res.send('Portfolio server app running');
+});
 
 router.post("/contact", (req, res) => {
   const name = req.body.firstName + " " + req.body.lastName;
