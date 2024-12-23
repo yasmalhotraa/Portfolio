@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
-const { Form } = require("react-bootstrap");
+
 
 //server used ti send emails
 const app = express();
