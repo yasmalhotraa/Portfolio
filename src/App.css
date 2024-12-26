@@ -44,7 +44,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  line-height: normal;
+  line-height: 2px;
 }
 
 p,
@@ -86,11 +86,11 @@ select:focus {
 }
 
 p.success {
-  color: green;
+  color: rgb(0, 255, 0);
 }
 
 p.danger {
-  color: red;
+  color: rgb(255, 0, 0);
 }
 /************ Navbar Css ************/
 nav.navbar {

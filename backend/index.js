@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 //server used to send emails
 const app = express();
@@ -27,8 +28,8 @@ contactEmail.verify((error) => {
     console.log("Ready to Send");
   }
 });
-router.get("/", function (req, res) {
-  res.send("Portfolio server app running");
+router.get("/contact", (req, res) => {
+  res.send("This is the contact page and server is running.");
 });
 
 router.post("/contact", (req, res) => {

@@ -84,6 +84,8 @@ export const Contact = () => {
                     type="tel"
                     value={formDetails.phone}
                     placeholder="Phone No."
+                    maxLength={10}
+                    pattern="[0-9]{10}"
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
@@ -94,21 +96,21 @@ export const Contact = () => {
                     placeholder="Message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   />
+                  {status.message && (
+                    <Col>
+                      <p
+                        className={
+                          status.success === false ? "danger" : "success"
+                        }
+                      >
+                        {status.message}
+                      </p>
+                    </Col>
+                  )}
                   <button type="submit">
                     <span>{buttonText}</span>
                   </button>
                 </Col>
-                {status.message && (
-                  <Col>
-                    <p
-                      className={
-                        status.success === false ? "danger" : "success"
-                      }
-                    >
-                      {status.message}
-                    </p>
-                  </Col>
-                )}
               </Row>
             </form>
           </Col>

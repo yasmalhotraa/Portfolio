@@ -68,16 +68,17 @@ export const Banner = () => {
                   <span className="tagline animate__animated animate__bounce">
                     Welcome to my Portfolio
                   </span>
+                  <h1>Hi! I'm Yash Malhotra </h1>
                   <h1>
-                    {`Hi! I'm Yash Malhotra`}{" "}
                     <span
                       className="txt-rotate"
-                      dataPeriod="1000"
+                      dataperiod="1000"
                       data-rotate='[ "Software Developer", "Web Designer", "UI/UX Designer" ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
+
                   <p>
                     I am a Computer Science graduate with expertise in software
                     development, data analysis, and web technologies.
