@@ -60,6 +60,7 @@ export const Contact = () => {
                     type="text"
                     value={formDetails.firstName}
                     placeholder="First Name"
+                    required
                     onChange={(e) => onFormUpdate("firstName", e.target.value)}
                   />
                 </Col>
@@ -68,6 +69,7 @@ export const Contact = () => {
                     type="text"
                     value={formDetails.lastName}
                     placeholder="Last Name"
+                    required
                     onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   />
                 </Col>
@@ -76,6 +78,7 @@ export const Contact = () => {
                     type="email"
                     value={formDetails.email}
                     placeholder="Email Address"
+                    required
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </Col>
@@ -84,6 +87,7 @@ export const Contact = () => {
                     type="tel"
                     value={formDetails.phone}
                     placeholder="Phone No."
+                    required
                     maxLength={10}
                     pattern="[0-9]{10}"
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
@@ -94,6 +98,7 @@ export const Contact = () => {
                     rows={6}
                     value={formDetails.message}
                     placeholder="Message"
+                    required
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   />
                   {status.message && (
